@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+}
+.content{
+    width: 100%;
+    height: 200%; 
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    background-color: rgb(34,27,96);
+    display: flex;
+    top:0;
+    position: fixed;
+}
+header img{
+    width: 100px;
+    height: 65px;
+    margin-left: 50px;
+    animation-name: test;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear; 
+}
+@keyframes test {
+    from {
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.15);
+    }
+}
+.bar1{
+    margin-left: 20px;
+    list-style-type: none;
+}
+.bar1 li{
+    display: inline-block; 
+}
+.bar1 li a{
+    display: block;
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+a:hover{
+    transform: scale(1.4);
+    transition: 0.3s;
+}
+.cont{
+    width: 400px;
+    height: auto; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.cont form{
+    width: 100%;
+    background-color:white;
+    /* box-shadow: 2px 2px 7px blanchedalmond,
+    -2px -2px 7px blanchedalmond; */
+    display: flex;
+    flex-direction: row;
+    align-items:center;  
+    border-radius:5px;
+}
+.cont form i{  
+    margin:0 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.cont  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 7px;
+    border-radius:5px;
+}
+.bar3{
+    list-style-type: none;
+    margin:20px 0 0 50px;
+}
+.bar3 li {
+    float: left;
+}
+.bar3 li a{
+    text-decoration: none;
+    color: azure;
+    font-size: 23px;
+    padding: 20px;
+    text-align: center;
+}
+.bar3 li a:hover{
+    color:rgb(21, 55, 179);
+}
+/* slideshow imgae */
+.slide{
+    margin-top: 110px;
+    margin-left: 25%;
+    width: 600px;
+    height: 300px;
+    /* border: 4px solid rgb(38, 27, 6);
+    border-radius: 15px; */
+    /* outline: 6px groove rgba(28, 28, 177, 0.722); */
+}
+.slide img{
+    width: 593px;
+    height: 293px;
+    border-radius: 15px;
+    outline: 5px solid rgba(44, 44, 129, 0.399);
+}
+/* iteme 1 */
+.main_item{
+    display: inline;
+    scroll-behavior: smooth;
+}
+.main_item .name{
+    margin-left: 30px;
+    width: 95.5%;
+    border-bottom: 2px solid rgb(223, 49, 49);
+}
+.main_item .name h2{
+    width: 130px;
+    height:0px;
+    text-align: center;
+    border-left: 0;
+    border-right: 25px solid transparent;
+    border-bottom:35px solid  rgb(215, 49, 49);
+    color: white;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    transition: 1.3;
+
+} 
+.items .card{
+    /* border: 1px solid; */
+    width:300px;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    transition: 1s;
+}
+.items .card img:hover{
+    transform: scale(0.9);
+}
+.items .card summary{
+    list-style-type: none;
+}
+.items .card img{
+    width: 295px;
+    height: 250px;
+    margin: auto;
+}
+.items .card h3{
+    margin-top: 7px;
+    color:rgb(21, 40, 205);
+    font-size: 20px;
+}
+.items .card p{
+    text-align: justify;
+    margin: 5px;
+    font-size: 18px;
+    color:rgb(2, 18, 2)
+}
+/* footer */
+footer{
+    background-color: rgb(36, 34, 34);
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color : white;
+    height: 200px;
+    width: 100%;
+}
+footer h2:hover{
+    color :rgb(41, 60, 129);
+}
+.f1 pre{
+    position: absolute;
+    left:50px;
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+.inf p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact{
+    display: inline-block;
+}
+.contact h2{
+    color:antiquewhite;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.contact a{
+    display: block;
+    float: left;
+    text-decoration: none !important;
+    font-size: 30px;
+    margin:5px;
+    padding: 0;
+    color :rgb(180, 212, 191);
+    transition: 0.3;
+}
+.contact  a:hover{
+    color:rgba(40, 145, 14, 0.994);
+    background-color: rgb(36, 34, 34);
+    transform: scale(1.5);
+    /* transform: rotate(145deg); */
+}
